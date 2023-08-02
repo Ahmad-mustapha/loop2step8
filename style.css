@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f4f8;
+    display: grid;
+    place-items: center;
+}
+.container{
+    width: 18rem;
+    height: 75vh;
+    margin: 4rem auto;
+    border: 9px solid #000;
+    border-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.mid{
+    position: absolute;
+    width: 10rem;
+    border-radius: 0 0 6px 6px;
+    height: 1.3rem;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+}
+.secCircle{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: #f2f4f8;
+    top: -1.75rem;
+    right: 2.57rem;
+    z-index: -1;
+}
+.secCircle{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: #f2f4f8;
+    top: -1.75rem;
+    left: 2.57rem;
+    z-index: -1;
+}
+.blue{
+    position: absolute;
+    width: 23rem;
+    height: 20rem;
+    top: -3rem;
+    left: 9rem;
+    background-color: #5288f4;
+    z-index: -1;
+    transform: skew(65deg, -3deg);
+}
+.up{
+    margin-top: 2rem;
+    display: grid;
+    place-items: center;
+}
+.up p{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .78rem;
+    margin-bottom: .9rem;
+}
+.items{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+.items img{
+    width: 1.1rem;
+}
+.text p:first-child{
+    font-size: .8rem;
+    font-weight: bold;
+}
+.text p:nth-child(2){
+    font-size: .7rem;
+}
+.switch input{
+    display: none;
+}
+.switch{
+    width: 2.3rem;
+    height: 1rem;
+    position:relative;
+    display: inline-block;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    background-color: gray;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+input:checked+.slider::before{
+    left:20px;
+}
